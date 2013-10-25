@@ -1,0 +1,6 @@
+[submodule ".support/puppet/modules/puppi"]
+	path = .support/puppet/modules/puppi
+	url = git@github.com:example42/puppi.git
+[submodule ".support/puppet/modules/apache"]
+	path = .support/puppet/modules/apache
+	url = git@github.com:example42/puppet-apache.git
