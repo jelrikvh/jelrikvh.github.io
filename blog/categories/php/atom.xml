@@ -4,7 +4,7 @@
   <title><![CDATA[Category: php | jelrik.me]]></title>
   <link href="http://jelrik.me/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://jelrik.me/"/>
-  <updated>2014-02-07T12:15:45+00:00</updated>
+  <updated>2015-10-17T11:06:15+00:00</updated>
   <id>http://jelrik.me/</id>
   <author>
     <name><![CDATA[Jelrik van Hal]]></name>
@@ -132,6 +132,88 @@ of the photo&rsquo;s in this post. And as a final word: Thanks David</em> and Ka
 .. <em>jordi: <a href="http://www.flickr.com/photos/seldaek/">http://www.flickr.com/photos/seldaek/</a>
 .. </em>david: <a href="https://twitter.com/Luckyluz8">https://twitter.com/Luckyluz8</a>
 .. _kana: <a href="https://twitter.com/MissYeh">https://twitter.com/MissYeh</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XMLSchema and ISO-8601: not a match made in heaven]]></title>
+    <link href="http://jelrik.me/blog/2014/02/03/xmlschema-and-iso8601/"/>
+    <updated>2014-02-03T17:41:00+00:00</updated>
+    <id>http://jelrik.me/blog/2014/02/03/xmlschema-and-iso8601</id>
+    <content type="html"><![CDATA[<p>Ever used the ISO-8601_ standard to format dates in, for example, your API? And ever thought you&rsquo;d be &ldquo;safe&rdquo; for all
+client applications, because you adhere to an ISO standard?</p>
+
+<p>Then I got a little surprise for you.</p>
+
+<p>.. code-block:: xml</p>
+
+<pre><code>&lt;xs:element name="date_added" type="xs:dateTime" /&gt;
+</code></pre>
+
+<p>.. more</p>
+
+<p>XMLSchema doesn&rsquo;t implement ISO-8601 completely, something I only found out after 3 hours of debugging. When using the
+<code>dateTime</code> type, the XMLSchema definition says the following which is somewhat vague::</p>
+
+<pre><code>This representation simplifies interval arithmetic and leap-year calculation for dates before
+the common era (which may be why astronomers and others interested in such calculations with
+the proleptic Gregorian calendar have adopted it), and is consistent with the current edition
+of [ISO 8601].
+</code></pre>
+
+<p>What they (should) mean to say is that their accepted input format is one of the formats ISO-8601 describes. The trick
+is in the, optional, timezone part. ISO-8601 allows for the timezone part to be just four digits with a plus sign in
+front: <code>+0900</code>. This means that a date/time combination could be formatted as follows::</p>
+
+<pre><code>2014-02-06T07:06:00+0000
+</code></pre>
+
+<p>This format will, however, not validate through XMLSchema. It expects the most verbose syntax that is allowed by the
+standard, which includes a colon <code>:</code> between the second and third digit of the timezone. This makes kind of sense,
+because in most other parts of the standard format, the separator <code>:</code> or <code>-</code> can be omitted as well.</p>
+
+<p>The fun part, however, is yet to come. When working in PHP, which I do a lot, there&rsquo;s a problem. In PHP, there&rsquo;s the
+<code>\DateTime</code> class to work with, you&rsquo;ve guessed it, dates and times.</p>
+
+<p>.. code-block:: php</p>
+
+<pre><code>&lt;?php
+$dateAndTime = new \DateTime('now');
+</code></pre>
+
+<p>This class has a <code>format()</code> method that takes a textual format pattern to determine the format you want. For your
+convenience, some preconfigured formats have been defined. One example, which I used to use a lot, was the ISO-8601 one.</p>
+
+<p>.. code-block:: php</p>
+
+<pre><code>const string ISO8601 = "Y-m-d\TH:i:sO" ;
+</code></pre>
+
+<p>The documentation says the following about it::</p>
+
+<pre><code>DATE_ISO8601
+ISO-8601 (example: 2005-08-15T15:52:01+0000)
+</code></pre>
+
+<p>Fair enough. This adheres to the standard. But when using it to generate an XML output that will be checked using
+XMLSchema, <strong>it will just fail</strong>.</p>
+
+<p>The guys at PHP noticed this problem and solved it for us. There&rsquo;s another predefined format, which is called <code>W3C</code>.
+It simply adds a <code>:</code> and you&rsquo;re good to go and use XMLSchema!</p>
+
+<p>.. code-block:: php</p>
+
+<pre><code>&lt;?php
+$dateAndTime = new \DateTime('now');
+echo $dateAndTime-&gt;format(\DateTime::W3C);
+
+// Will output 2014-02-06T07:06:00+00:00
+</code></pre>
+
+<p>From now on, I use the <code>W3C</code> one everywhere. It adheres to the ISO-8601 standard just as well, but obviously allows
+for more client application to run without problems!</p>
+
+<p>.. _ISO-8601: <a href="http://en.wikipedia.org/wiki/ISO_8601">http://en.wikipedia.org/wiki/ISO_8601</a></p>
 ]]></content>
   </entry>
   

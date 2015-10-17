@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: js | jelrik.me]]></title>
+  <link href="http://jelrik.me/blog/categories/js/atom.xml" rel="self"/>
+  <link href="http://jelrik.me/"/>
+  <updated>2015-10-17T11:06:15+00:00</updated>
+  <id>http://jelrik.me/</id>
+  <author>
+    <name><![CDATA[Jelrik van Hal]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[JavaScript thinks January is labeled 0]]></title>
+    <link href="http://jelrik.me/blog/2015/10/14/til-january-is-zero/"/>
+    <updated>2015-10-14T13:00:00+00:00</updated>
+    <id>http://jelrik.me/blog/2015/10/14/til-january-is-zero</id>
+    <content type="html"><![CDATA[<p><strong>Today I learned</strong> that, contrary to some other programming languages I&rsquo;m used to, JavaScript uses the number <code>0</code> to
+represent the month January, when working with dates. You probably already know that, but maybe this blogpost will save
+a life somewhere. Or at least save you from some debugging hours.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -2,19 +2,27 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://jelrik.me/blog/2014/02/03/xmlschema-and-iso8601/</loc>
-        <lastmod>2014-02-07T09:03:41+00:00</lastmod>
+        <lastmod>2014-02-16T18:23:12+00:00</lastmod>
     </url>
     <url>
         <loc>http://jelrik.me/blog/2014/02/07/bumpercar-basics/</loc>
         <lastmod>2014-02-07T09:23:55+00:00</lastmod>
     </url>
     <url>
+        <loc>http://jelrik.me/blog/2015/10/14/til-january-is-zero/</loc>
+        <lastmod>2015-10-17T10:58:50+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jelrik.me/blog/2015/10/17/transform-your-standup/</loc>
+        <lastmod>2015-10-17T11:02:06+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://jelrik.me/blog/archives/</loc>
-        <lastmod>2014-02-07T09:23:55+00:00</lastmod>
+        <lastmod>2015-10-17T11:02:06+00:00</lastmod>
     </url>
     <url>
         <loc>http://jelrik.me/</loc>
-        <lastmod>2014-02-07T09:23:55+00:00</lastmod>
+        <lastmod>2015-10-17T11:02:06+00:00</lastmod>
     </url>
     <url>
         <loc>http://jelrik.me/robots.txt</loc>

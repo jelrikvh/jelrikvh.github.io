@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: agile | jelrik.me]]></title>
+  <link href="http://jelrik.me/blog/categories/agile/atom.xml" rel="self"/>
+  <link href="http://jelrik.me/"/>
+  <updated>2015-10-17T11:06:15+00:00</updated>
+  <id>http://jelrik.me/</id>
+  <author>
+    <name><![CDATA[Jelrik van Hal]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Transform your daily standup]]></title>
+    <link href="http://jelrik.me/blog/2015/10/17/transform-your-standup/"/>
+    <updated>2015-10-17T13:00:00+00:00</updated>
+    <id>http://jelrik.me/blog/2015/10/17/transform-your-standup</id>
+    <content type="html"><![CDATA[<p>So you&rsquo;re a developer. Of course you&rsquo;re doing SCRUM. Every sprint starts with a planning and ends with a review or demo.
+There&rsquo;s a retrospective, some refinement sessions, and of course, your standup (or daily SCRUM). And although you&rsquo;re
+following guidelines and have &ldquo;standup questions&rdquo; everyone needs to answer, there&rsquo;s something wrong. The standup takes
+forever, <strong>you feel you&rsquo;re wasting time there</strong>. You already know what you&rsquo;re colleagues are up to. Why does that SCRUM
+master make you listen to this?</p>
+
+<p>Sounds familiar? It does, right? You&rsquo;re doing the standup wrong. Read on and transform your standup into <strong>the little
+ball of energy and focus for the whole team</strong> that it is meant to be.</p>
+
+<p>.. image:: /assets/transform-your-standup/scrum.jpg</p>
+
+<p>.. more</p>
+
+<h2>So, what is it meant to be?</h2>
+
+<p>The first thing that pops to mind when mentioning the standup is &ldquo;tell people what you have been doing and what you will
+do today&rdquo;. Or maybe &ldquo;let the scrum master and product owner know how we are doing&rdquo;. While that is undoubtedly very
+interesting, it is not what the meeting is about.</p>
+
+<p>The standup is there for team members. The update they present to eachother is a way to <strong>spot problems before they
+arise</strong>. A way to <strong>regain focus</strong>. It&rsquo;s not as easy as it sounds but once your team masters the specifics of a
+sensible standup, the meeting is a source of information you can use to perfect the team&rsquo;s happiness. And by that, help
+the performance of the team improve.</p>
+
+<h2>Symptoms of potential improvement</h2>
+
+<p>The following symptoms could be an indication your standup can do with a little improvement. Before proposing another
+approach, I&rsquo;ll try and explain what went wrong in the first place.</p>
+
+<p>Your standup questions</p>
+
+<hr />
+
+<p>&ldquo;What did you do yesterday?&rdquo; and &ldquo;What will you do today?&rdquo; are the standup questions I often come across. The problem
+with them is that they stand alone. <strong>They do not in any way relate to the larger body of work</strong> or progress that your
+team is trying to get done, such as the sprint goal. They don&rsquo;t even relate to what you said in the standup the day
+before.</p>
+
+<p>Your standup is a way for developers to get a feeling of their flow. <strong>Are you well on your way as a team?</strong> Do you see
+any current or future problems that you need to tackle as a team? Report what you have been doing in close relation to
+what you told everyone you would be doing the day before.</p>
+
+<p>I propose the following standup questions:
+1. Did you reach your personal daily goal since the last standup?
+2. What will be your personal daily goal until the next standup?
+3. What prevents you and your team from reaching your sprint goal?</p>
+
+<p>By explicitly setting a goal and referring back to it the next day, you&rsquo;re making progress measurable, and more
+importantly <em>feel-able</em>, for your co-developers. This set of questions basically breaks down the larger sprint goal into
+smaller blocks. Not reaching your goal is not failure at all and <strong>you shouldn&rsquo;t be mocked for that</strong>. There are loads
+of valid reasons for not getting there. However, noticing that someone did not reach their daily goal can help identify
+impediments that are working against you.</p>
+
+<p>Your standup is a status report</p>
+
+<hr />
+
+<p>Closely related to the standup questions discussed above, I often see developers reporting the status of an issue to the
+project manager, SCRUM master or product owner. The developers have committed to making the sprint during sprint
+planning. Micro-management during a sprint will only create tension between developers and other SCRUM team members,
+such as the product owner.</p>
+
+<p>A product owner, SCRUM master, or anyone not explicitly part of the team <strong>needs to place their trust in the
+developers</strong>. Your job as a developer is to set your mind to finish an issue. This is a creative process of problem
+identification followed by problem solving. No-one can predict up-front how much time that process will take. Not even
+you. No, really, you can&rsquo;t.</p>
+
+<p>So how can anyone place trust in a developer that doesn&rsquo;t know when an issue will be finished? Simple. They need to
+realize that software engineering is an unpredictable practice. Let them trust you in finishing an issue to your best
+capacities <strong>and report to them if there are any problems</strong>. They will then know that the development team does not need
+micromanagement. This kind of status report is, however, not what the standup is for.</p>
+
+<p>I propose that, if you walk into problems while fixing or implementing an issue that possibly prevent the team from
+reaching their sprint goal, you walk over to the product owner and/or SCRUM master to tell them. Don&rsquo;t wait for the
+standup. They will want to know anyway. This saves a lengthy explanation of the problem at hand during standup. Which I
+will say once more, is a meeting for developers to get a feeling on their flow as a team.</p>
+
+<p>You are interrupted during your update</p>
+
+<hr />
+
+<p>So, you are telling people what you have been up to, how that relates to your personal daily goal, and the sprint goal
+at large. Exactly as described above. You did it all. And still, there&rsquo;s that product owner interrupting you during your
+update.</p>
+
+<p>Tell the guy or gal to knock it off. Seriously. Tell them to let you speak. Refer to the trust I point out in the
+previous paragraph. No-one should interrupt you.</p>
+
+<p>There are two general reasons why people are interrupting. The first is that they actually have valid questions. In that
+case, make sure to finish your standup with a general quick-question round. Don&rsquo;t go into detail. Try to offload the
+answering of questions to somewhere outside the standup. But offer everyone the chance to ask these questions.</p>
+
+<p>A second possible reason is that people think of something while you are talking, and they should have been telling this
+to the group during their own update.</p>
+
+<p>To solve the latter problem, as well as to help solve the first one, you might introduce a &ldquo;speaking stick&rdquo;, &ldquo;standup
+totem&rdquo;, or the like. Find an object that can easily be hold while talking. The one holding the totem is the one doing
+the talking. No-one else talks. This is a very explicit and visible way of enforcing the &ldquo;I am talking. Let me.&rdquo; rule,
+but it works quite nicely. The one thing to remember is to be very, very strict about it.</p>
+
+<p>People don&rsquo;t come prepared</p>
+
+<hr />
+
+<p>Another observation I made is the high rate of participants attending the standup unprepared. While talking, they are
+looking through the SCRUM board for the issues they have been working on, thinking aloud.</p>
+
+<p>This is the simplest of improvements. Define your standup questions (you could use my proposal found above) and prepare
+your answers to them. Present your part in a logical and coherent way, while relating to the larger (sprint) goal. This
+just saves time and allows for a better understanding of what you are actually trying to say.</p>
+
+<p>Your standup takes place early in the morning</p>
+
+<hr />
+
+<p>This is a tricky one. There is nothing really inherently wrong with having your standup early. It could, however, be an
+indication of a deeper problem. The standup doesn&rsquo;t have to be early. The standup doesn&rsquo;t have to be your daily
+kick-off, it can easily be held just before or after lunch, or some other convenient time of the day.</p>
+
+<p>When planning your standup, observe the main objectives of the meeting: confidence in the current flow, and focus.
+<strong>To maximize the development team&rsquo;s focus, you need your meetings to interrupt as few people as possible from their
+focused workflow.</strong></p>
+
+<p>If most of your team enters the office around the same time in the morning, it makes sense to plan your standup at that
+moment before everyone gets up to speed for the day.</p>
+
+<p>However, if some people start their workdays at 8AM and others arrive at 10AM, having a 10AM standup breaks the 4 hours
+of undisturbed work before lunch for the earlybirds. Planning it just before or after lunch, a moment when focus is
+broken anyway, could in that case just make sense.</p>
+
+<p>There is no silver bullet here. Evaluate your team&rsquo;s standup time, find the moment that fits your team. Just make sure
+it&rsquo;s the same time, every day.</p>
+
+<p>It&rsquo;s an iterative process</p>
+
+<hr />
+
+<p><strong>Like everything in modern software development, your standup format is an iterative process too.</strong> Experiment. Find
+your way. Find the team&rsquo;s way. Don&rsquo;t change everything at the same time, people seem not to be very good at handling
+large sets of changes at once.</p>
+
+<p>Talk about this with your team. <strong>Try to find out what you and your team members want to get out of the daily
+standup.</strong> Define the goal and then find means to achieve that goal.</p>
+
+<p>And if it doesn&rsquo;t work? No problem, no shame, no-ones fault. Change it. Keep the feedback cycle short. It&rsquo;s an iterative
+process anyway.</p>
+
+<h2>Symptoms I missed</h2>
+
+<p>This is by no means a full list of symptoms of standups that could do with improvements. These are just situations I run
+into. Do you have an example from your workplace? Or do you disagree with solutions I proposed? Please leave a comment
+below.</p>
+]]></content>
+  </entry>
+  
+</feed>
